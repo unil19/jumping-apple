@@ -20,7 +20,7 @@ class App extends Component {
     	<MuiThemeProvider theme={theme}>
     		<div className="App">
 		        <Bar></Bar>
-		        <p style={{color:"#666"}}>网站建设中...</p>
+		        <p style={{color:"#666"}}>不是灯不够亮，只是天不够黑</p>
 		     </div>
 	   </MuiThemeProvider>
     );

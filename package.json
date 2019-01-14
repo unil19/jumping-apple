@@ -23,5 +23,11 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-spawn": "^6.0.5"
+  }
 }
