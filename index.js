@@ -2,6 +2,9 @@
 const spawn = require('cross-spawn');
 
 const args = process.argv.slice(2);
+if(args.length===0){
+	args.push("start");
+}
 
 const scriptIndex = args.findIndex(
   x => x === 'build' || x === 'eject' || x === 'start' || x === 'test'
@@ -37,3 +40,14 @@ f();
 const foo = Object.freeze({a:{b:123}});
 foo.a.b = 456 
 console.info(JSON.stringify(foo));
+
+let [a, b, c] = [1, 2, 3];
+
+let f2 = ()=>{
+	console.log("f2");
+}
+
+let[x=f2()]=[1];
+
+let { tab: tab2} = {tab: 123};
+console.log(tab2);
