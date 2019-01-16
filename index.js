@@ -51,3 +51,33 @@ let[x=f2()]=[1];
 
 let { tab: tab2} = {tab: 123};
 console.log(tab2);
+
+let obj = {
+  p: [
+    'Hello',
+    { y2: 'World' }
+  ]
+};
+
+let { p:p, p: [x2, { y2 }] } = obj;
+
+let x3;
+({x3} = {x3: 1});
+console.log(x3);
+
+for(let i=0;i<12;i++){
+  console.log((i+1+"").padStart(2,'0'));
+}
+
+let name="Bob", time = "today";
+let word = `Hello ${name}, how are you ${time}?`;
+console.log(word);
+
+function tag(stringArr, value1, value2){
+  console.log(stringArr);
+  console.log(value1);
+  console.log(value2);
+}
+let a5 = 5;
+let b5 = 10;
+tag`Hello ${ a5 + b5 } world ${ a5 * b5 }`;
